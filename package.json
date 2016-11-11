@@ -1,0 +1,25 @@
+{
+  "name": "providence-controller",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Providence Controller",
+  "main": "app/server.js",
+  "scripts": {
+    "lint": "eslint .",
+    "dev": "NODE_ENV='development' node app/server.js",
+    "start": "NODE_ENV='production' pm2 start app/server.js --name providence-controller"
+  },
+  "repository": "providence-controller",
+  "keywords": [],
+  "author": "Jia-Kuan Su, Wei-Ting Chou",
+  "devDependencies": {
+    "eslint": "2.11.1"
+  },
+  "dependencies": {
+    "restify": "4.1.1",
+    "nats": "0.6.4",
+    "randomstring": "1.1.5",
+    "lodash": "4.12.0",
+    "body-parser": "1.15.1"
+  }
+}
